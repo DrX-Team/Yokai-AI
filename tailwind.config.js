@@ -1,0 +1,2 @@
+/** @type {import('tailwindcss').Config} */
+export default { content: ['./index.html', './src/**/*.{js,jsx}'], theme: { extend: { fontFamily: { sans: ['DM Sans', 'sans-serif'], hand: ['Patrick Hand', 'cursive'] }, colors: { ink: '#292332', violet: { 100: '#ede9fe', 200: '#ddd6fe', 300: '#c4b5fd', 400: '#a78bfa', 500: '#8b5cf6', 600: '#7c3aed', 700: '#6d28d9', 950: '#2e1065' } }, boxShadow: { glass: '0 18px 55px rgba(84, 63, 150, .13)' } } }, plugins: [] };
