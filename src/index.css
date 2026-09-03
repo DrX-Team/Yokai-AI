@@ -10,6 +10,17 @@
 
 .landing-shell { position:relative; overflow:hidden; }
 .landing-section { scroll-margin-top: 96px; }
+.dashboard-grid { display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:18px; align-items:start; }
+.stat-card { min-height:92px; display:flex; flex-direction:column; justify-content:center; background:rgba(255,255,255,.42); }
+.upload-panel { min-height:230px; display:flex; align-items:center; gap:28px; background:linear-gradient(135deg,rgba(255,255,255,.58),rgba(237,233,254,.58)); }
+.prompt-box { min-height:194px; background:linear-gradient(135deg,rgba(255,255,255,.46),rgba(232,248,245,.48)); }
+.prompt-chip { border:1px solid rgba(124,58,237,.22); border-radius:999px; background:rgba(255,255,255,.55); padding:6px 9px; font-size:10px; color:#6149bb; }
+.image-drop { min-height:118px; display:flex; align-items:center; gap:12px; border:1px dashed rgba(34,197,94,.8); border-radius:18px; background:rgba(240,253,244,.38); padding:18px; cursor:pointer; transition:transform .25s ease, background-color .25s ease; }
+.image-drop:hover { transform:translateY(-2px); background:rgba(240,253,244,.62); }
+.quick-prompt { width:100%; border-radius:12px; background:rgba(255,255,255,.45); padding:9px 10px; text-align:left; font-size:10px; color:#6149bb; }
+.action-strip { display:flex; align-items:center; justify-content:space-between; gap:16px; background:rgba(255,255,255,.48); }
+.workflow-step { display:flex; gap:12px; margin-bottom:14px; border-radius:14px; background:rgba(255,255,255,.3); padding:9px; }
+.job-row { display:flex; gap:10px; border-top:1px solid rgba(46,16,101,.1); padding:13px 0; }
 .hero-card { animation: floatIn 850ms cubic-bezier(.2,.8,.2,1) both, hoverFloat 6s ease-in-out 1s infinite; }
 .reveal-up, .feature-card, .cta-panel { animation: revealUp 700ms cubic-bezier(.2,.8,.2,1) both; }
 .feature-card:nth-child(2) { animation-delay: 120ms; }
@@ -37,6 +48,12 @@ main { animation: pageIn .45s ease both; }
 
 @media (max-width: 640px) {
   .landing-shell { padding-left:16px; padding-right:16px; }
+  .upload-panel, .action-strip { align-items:flex-start; flex-direction:column; }
+  .upload-art { height:86px; width:102px; }
   .document-page { padding: 24px 20px; }
   .chat.user { margin-left:0; }
+}
+
+@media (max-width: 1180px) {
+  .dashboard-grid { grid-template-columns:1fr; }
 }
