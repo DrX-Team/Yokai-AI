@@ -10,6 +10,7 @@
 
 .landing-shell { position:relative; overflow:hidden; }
 .landing-section { scroll-margin-top: 96px; }
+.app-shell { max-width:1920px; margin:0 auto; }
 .dashboard-grid { display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:18px; align-items:start; }
 .stat-card { min-height:92px; display:flex; flex-direction:column; justify-content:center; background:rgba(255,255,255,.42); }
 .upload-panel { min-height:230px; display:flex; align-items:center; gap:28px; background:linear-gradient(135deg,rgba(255,255,255,.58),rgba(237,233,254,.58)); }
@@ -56,4 +57,9 @@ main { animation: pageIn .45s ease both; }
 
 @media (max-width: 1180px) {
   .dashboard-grid { grid-template-columns:1fr; }
+}
+
+@media (min-width: 1600px) {
+  .app-shell { padding-left:18px; padding-right:18px; }
+  .dashboard-grid { grid-template-columns:minmax(0,1fr) 360px; }
 }
