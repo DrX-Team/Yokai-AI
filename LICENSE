@@ -1,0 +1,54 @@
+Yokai AI Non-Commercial Source-Available License
+Version 1.0 (2026)
+
+Copyright (c) 2026 DrX-Team / Ashlin Mirsha. All rights reserved.
+
+================================================================================
+TERMS AND CONDITIONS FOR ACCESS, USE, MODIFICATION, AND DISTRIBUTION
+================================================================================
+
+1. GRANT OF LICENSE
+Subject to the terms and conditions of this License, the Copyright Holder hereby 
+grants to any person obtaining a copy of this software and associated documentation 
+files (the "Software"), a worldwide, non-exclusive, royalty-free, revocable license to:
+  (a) View, inspect, study, and research the source code.
+  (b) Modify, enhance, adapt, and translate the source code.
+  (c) Run, execute, and compile the Software solely for Non-Commercial Purposes.
+  (d) Distribute copies or modifications of the Software solely for Non-Commercial 
+      Purposes, provided that this License file and original copyright notice are 
+      retained in all copies or substantial portions of the Software.
+
+2. COMMERCIAL USE RESTRICTION (STRICTLY PROHIBITED)
+  (a) You may NOT use, deploy, run, sell, lease, sublicense, distribute, or make 
+      available the Software or any derivative work thereof for any Commercial Purpose.
+  (b) "Commercial Purpose" includes, without limitation:
+      - Selling the Software, hosted SaaS, or API access for money or valuable consideration.
+      - Incorporating the Software into a paid commercial product, service, or offering.
+      - Operating the Software as a hosted service or cloud platform for revenue generation.
+      - Selling customer support, maintenance, or consulting services specifically around 
+        a proprietary redistribution of the Software.
+  (c) All ownership, title, copyright, intellectual property, and proprietary rights in 
+      and to the Software remain exclusively with the Copyright Holder (DrX-Team).
+
+3. PERSONAL, ACADEMIC, AND RESEARCH USE PERMITTED
+Use of the Software is expressly permitted without cost for:
+  (a) Personal, hobbyist, and private non-commercial projects.
+  (b) Academic instruction, coursework, student lab documents, and university research.
+  (c) Evaluation, security auditing, and internal testing where no commercial revenue 
+      is derived.
+
+4. ENTERPRISE AND COMMERCIAL LICENSING
+Any organization, company, or individual desiring to utilize the Software for 
+commercial applications, enterprise deployment, proprietary customization, or 
+resale must obtain a separate written Enterprise Commercial License from the 
+Copyright Holder.
+Contact: For enterprise licensing, inquiries, and commercial authorizations:
+Email: ashlinmirsha@gmail.com / 323911451+DrX-Team@users.noreply.github.com
+
+5. NO WARRANTY & LIMITATION OF LIABILITY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
+CONTRIBUTORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN 
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH 
+THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
