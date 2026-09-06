@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { supabase } from './lib/supabase';
 
+function Mascot({small = false}) { return <div className={`mascot ${small ? 'small' : ''}`}><i className="horn left-1"/><i className="horn right-1"/><b className="eye left-2.5"/><b className="eye right-2.5"/><span className="smile"/></div>; }
+function Glass({children, className = ''}) { return <section className={`glass ${className}`}>{children}</section>; }
+function Button({children, className = ''}) { return <button className={`primary rounded-xl px-5 py-3 text-sm ${className}`}>{children}</button>; }
+
 function Field({label, placeholder, type = 'text', value, onChange}) {
   return <label className="mb-4 block text-xs font-semibold">{label}<div className="mt-2 rounded-xl border border-white/80 bg-white/40 px-4 py-3"><input required type={type} placeholder={placeholder} value={value} onChange={onChange} className="w-full bg-transparent outline-none placeholder:text-slate-400" /></div></label>;
 }

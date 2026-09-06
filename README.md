@@ -103,6 +103,18 @@ npm run dev
 ```
 The frontend starts on `http://localhost:5173` with Vite proxying `/api` requests to port `5000`.
 
+### Supabase Auth Setup
+The sign-in, account creation, and password reset screens use Supabase Auth. Link the local Supabase CLI to your project, then copy the project URL and anon key into `.env`:
+
+```bash
+supabase login
+supabase link --project-ref <your-project-ref>
+supabase status
+cp .env.example .env
+```
+
+Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `.env`, then restart Vite. Enable Email auth in the Supabase dashboard; configure the site URL as `http://localhost:5173` for local password-reset links.
+
 ### 2. Backend Setup
 ```bash
 cd backend

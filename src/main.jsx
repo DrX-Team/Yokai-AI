@@ -2,7 +2,6 @@ function Auth({mode,setMode,enter}) { return <ConnectedAuth mode={mode} setMode=
 import { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { supabase } from './lib/supabase';
 import ConnectedAuth from './Auth';
 
 const nav = [['dashboard','+ New Chat'],['documents','▧ My Documents'],['jobs','◷ Recent Jobs'],['templates','▣ Templates'],['prompts','☆ Saved Prompts'],['settings','⚙ Settings']];
