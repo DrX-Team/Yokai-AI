@@ -1,8 +1,9 @@
-function Auth({mode,setMode,enter}) { return <LegacyAuth mode={mode} setMode={setMode} enter={enter}/>; }
+function Auth({mode,setMode,enter}) { return <ConnectedAuth mode={mode} setMode={setMode} enter={enter}/>; }
 import { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { supabase } from './lib/supabase';
+import ConnectedAuth from './Auth';
 
 const nav = [['dashboard','+ New Chat'],['documents','▧ My Documents'],['jobs','◷ Recent Jobs'],['templates','▣ Templates'],['prompts','☆ Saved Prompts'],['settings','⚙ Settings']];
 const jobs = [{name:'Networks_Document.docx', prompt:'Filled Experiment 5 on ARQ', status:'Completed', time:'2 min ago'}, {name:'DBMS_Lab_Record.docx', prompt:'Filled Normalization Experiment', status:'Completed', time:'1 hour ago'}, {name:'OS_Document.docx', prompt:'Filled Scheduling Experiment', status:'Processing', time:'8 min ago'}];
