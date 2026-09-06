@@ -115,6 +115,15 @@ cp .env.example .env
 
 Set `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY` in `.env`, then restart Vite. Enable Email auth in the Supabase dashboard; configure the site URL as `http://localhost:5173` for local password-reset links.
 
+For Google sign-in, enable Google under **Authentication > Providers > Google**. Add the Supabase callback URL shown by the dashboard (`https://zjrqlkygjvydfwmexprn.supabase.co/auth/v1/callback`) to Google Cloud's authorized redirect URIs. Add these application redirect URLs under **Authentication > URL Configuration**:
+
+- `http://localhost:5174` (use the Vite port shown in the terminal; also add `http://localhost:5173` if that port is used)
+- Your production origin, for example `https://your-production-domain.example`
+
+The frontend passes `window.location.origin` to Supabase OAuth, so the same build works for local development and production without hardcoded callback secrets.
+
+The current integration stores the user's full name in Supabase Auth user metadata and does not require a separate `profiles` table. Add a profiles table only when application-owned profile fields are needed, with RLS policies keyed to `auth.uid()`.
+
 ### 2. Backend Setup
 ```bash
 cd backend
